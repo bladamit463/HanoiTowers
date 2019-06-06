@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hanoitowers.FXMLDocumentController">
+    <children>
+      <TextField fx:id="txfDiskCount" layoutX="381.0" layoutY="329.0" prefHeight="25.0" prefWidth="88.0" />
+      <Label contentDisplay="CENTER" layoutX="381.0" layoutY="312.0" text="Number of disks" textAlignment="CENTER" />
+      <Line fx:id="lineBase" endX="846.0" layoutY="300.0" startX="26.0" strokeWidth="6.0" />
+      <Line fx:id="lineSource" layoutX="150.0" layoutY="20.0" startY="279.0" strokeWidth="5.0" />
+      <Line fx:id="lineAux" layoutX="425.0" layoutY="20.0" startY="279.0" strokeWidth="5.0" />
+      <Line fx:id="lineDest" layoutX="700.0" layoutY="20.0" startY="279.0" strokeWidth="5.0" />
+      <Button fx:id="btnCreate" layoutX="381.0" layoutY="355.0" onAction="#btnCreateHanoi" prefHeight="25.0" prefWidth="88.0" text="Create" />
+      <Button fx:id="btnStop" layoutX="655.0" layoutY="329.0" onAction="#btnStopSolve" prefHeight="17.0" prefWidth="90.0" text="Stop" />
+	<Button fx:id="btnSolve" layoutX="515.0" layoutY="329.0" onAction="#btnStartSolve" prefHeight="17.0" prefWidth="90.0" text="Solve" />
+    </children>
+</AnchorPane>
